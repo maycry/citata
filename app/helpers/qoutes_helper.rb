@@ -1,0 +1,2 @@
+module QoutesHelper
+end
