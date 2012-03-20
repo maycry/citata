@@ -1,0 +1,3 @@
+<p><%= @qoute.content %></p>
+<small><%= @qoute.author %></small>
+<%= link_to("Next", @qoute.next_qoute, remote: true, id: "link_next") if @qoute.next_qoute %>

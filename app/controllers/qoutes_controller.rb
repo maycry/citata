@@ -1,4 +1,5 @@
 class QoutesController < ApplicationController
+  http_basic_authenticate_with :name => "maycry", :password => "inferno", :except => "show"
   # GET /qoutes
   # GET /qoutes.json
   def index
@@ -17,6 +18,7 @@ class QoutesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
+      format.js 
       format.json { render json: @qoute }
     end
   end

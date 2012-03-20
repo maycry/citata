@@ -1,0 +1,3 @@
+var c = $('#qouteContainer');
+c.fadeOut(500);
+setTimeout(function(){c.html('<%= escape_javascript(render(:partial => @qoute))%>').fadeIn()}, 500);

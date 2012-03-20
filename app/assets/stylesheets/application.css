@@ -5,3 +5,7 @@
  *= require_self
  *= require_tree . 
 */
+body{
+	background-color:#111;
+	font: 16px/20px "PT Sans";	
+}
